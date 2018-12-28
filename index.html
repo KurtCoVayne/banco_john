@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head id="cabeza">
+    <link rel="icon" 
+        type="image/png" 
+        href="favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <meta charset="utf-8" />
+    <title>Banco John</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body id="cuerpo">
+    <p id="test"> </p>
+    <header id="main-header">
+        <center><h1 class="centradoT"><i>Banco John</i></h1></center></header>
+    <p class="img"><img src="cajero.gif"/></p>
+    <center><h1 class="p">Inserte la cantidad de dinero que desea sacar</h1></center>
+    <p><input type="number" id="dineroU" class="centrado"/><br/>
+    <input type="button" value="Recibir billetes" id="Recibir" class="centrado"/>
+    </p>
+    <br/><p id ="res" class="p"></p>
+    <hr>
+    <br/><h2 id="h2"><center><strong>Deseas hacer una transacción?</strong></center></h2>
+    <p id ="u_ss" align="center" class="p">Cuál es tu usuario?<br/>
+         <!-- <input type="button" value ="Juan" id="uJuan" style="margin: 10px;"/>
+         <input type="button" value ="Pepe" id="uPepe" style="margin: 10px"/>
+         <input type="button" value ="Angely" id="uAngely" style="margin: 10px"/></p><br/> -->
+        <p id="container" class="p" align="center"></p>
+        <hr>
+    <center><p class="centrado">Solo se pueden hacer transferencias entre las 9 o las 12 o la 15 y las 20.
+        <br/>Si los usuarios pertenecen al mismo banco no hay costo de transacción, de lo contrario, el costo será 100.</p></center><br/>
+    <p id="h_actual" class="centrado"></p>
+    <center><table border="1" id ="TablaI"style="align-items: center ;
+        justify-content: center;
+        font-family: 'Lato';
+        font-size: 18px;
+        font-weight: 350;
+        margin: 0 0 25px;
+        padding: 20px;
+        background-color: whitesmoke;
+        border-collapse: collapse;">
+        <tr>
+            <td><strong><center>Usuarios</center></strong></td>
+            <td><strong><center>Saldo</center></strong></td>
+            <td><strong>Banco al que están asociados</strong></td>
+            <td><strong>Estado de cuenta</strong></td>
+        </tr>
+    </table>
+    <p>
+        <strong>Monto de transferencia:</strong></p>
+    <input type="number" id="mt"/> 
+    <input type="button" id="boton" value="Realizar transferencia" style="margin: 10px"/>
+    
+    <script src="cajero.js"></script>
+    
+    <!-- <script src ="s_transaccion.js"></script> --> <!--Sistema transaccion viejo-->
+    <script src ="s_transaccion - vFinal.js"></script>
+    <script src="datos/usuarios_y_bancos.js"></script> 
+    <p id="saldosf"></p>
+    </body>
+    <footer>
+        <p>
+            Creado por John Alejandro González 2018 |
+            Información de contacto: <a href ="https://www.linkedin.com/in/john-alejandro-gonz%C3%A1lez-gonz%C3%A1lez-84486b177/">LinkedIn
+            </a>.
+            <a href ="https://www.facebook.com/profile.php?id=100008060718525">Facebook
+            </a>.
+        </p>
+    </footer>
+</html>

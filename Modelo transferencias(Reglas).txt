@@ -1,0 +1,20 @@
+Crear:
+Banco del cliente
+Cuenta del cliente
+Saldo del cliente
+Banco destino
+Cuenta destino
+Hora de transferencia[0-24]
+
+Transferir 30020:22 14/12/201821:23 14/12/2018 dolares
+Condiciones obligatorias para realizar una transferencia:
+Cliente tiene que estar verificado (t,f)
+Destino tiene que estar verificado (t,f)
+Saldo tiene que ser mayor que el monto a transferir más el costo de transferencia  
+
+
+Parametros del costo de transferencia 
+Si el banco destino es el mismo que el banco del cliente el costo es 0
+Si el banco destino es diferente que el banco del cliente el costo es 100
+
+Solo se pueden hacer transferencias de 9 a 12  o de 15 a 20

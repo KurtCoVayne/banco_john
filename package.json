@@ -1,0 +1,16 @@
+{
+  "name": "atm",
+  "version": "1.5.0",
+  "description": "Sistema de cajero automatico y Transferencias con posibilidad de agregar usuarios",
+  "main": "cajero.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Cajero",
+    "proyecto",
+    "banco"
+  ],
+  "author": "John Alejandro Gonzalez",
+  "license": "ISC"
+}

@@ -1,0 +1,83 @@
+
+#main-header {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0%;
+    /* font-size: 16px; */
+    background: #1c3643;
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+#cuerpo{
+    background-color: rgb(223, 223, 223);
+}
+img{
+    display: block;
+    margin: auto;
+    background-color: rgb(122, 122, 122);
+}
+.centrado{
+    font-family: serif; 
+    font-size: 18px; 
+    font-weight: 400; 
+    color: black; 
+    margin: auto;
+    display: block;
+}
+.centradoT{
+    font-style: italic;
+    font-family: serif; 
+    font-size: 50px; 
+    font-weight: 400; 
+    color: white; 
+    /* margin: auto; */
+    /* display: block; */
+}
+h1{
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    margin: auto;
+    display: block;
+}
+#h2{
+    font-weight: 300; 
+    font-family: serif; 
+    color: black; 
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    margin: auto;
+    display: block;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+
+.p{
+    font-style: oblique;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 350; 
+}
+hr {
+    height: 1.3px;
+    border: 0;
+    background-color: #1c3643;
+}
+#main-table {
+    align-items: center ;
+    justify-content: center;
+    font-family: serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    border-collapse: collapse;
+    }
+/* body {
+    background-color: #430C00
+} */
