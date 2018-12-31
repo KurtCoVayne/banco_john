@@ -2,6 +2,8 @@ var ddd; // Empiezan en ANY
 var ccc;
 var u_seleccionado;
 var u_destino;
+let hora_actual = 10; // Aquí se selecciona la hora actual
+document.getElementById("h_actual").innerHTML ="La hora actual es: "+ hora_actual
 class usuario{
     constructor(n, v, s, ba, c, d, aSP){
         this.nombre = n;
@@ -13,8 +15,6 @@ class usuario{
         this.arraySpace = aSP;
     }
     mostrarT(){ // Crea la tabla de cada usuario
-let hora_actual = 10; // Aquí se selecciona la hora actual
-let pHA = document.getElementById("h_actual").innerHTML ="La hora actual es: "+ hora_actual
         var tr = document.createElement("tr");
         var TablaI = document.getElementById("TablaI");
         TablaI.appendChild(tr);
