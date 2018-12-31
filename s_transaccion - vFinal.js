@@ -2,7 +2,6 @@ var ddd; // Empiezan en ANY
 var ccc;
 var u_seleccionado;
 var u_destino;
-
 class usuario{
     constructor(n, v, s, ba, c, d, aSP){
         this.nombre = n;
@@ -14,6 +13,8 @@ class usuario{
         this.arraySpace = aSP;
     }
     mostrarT(){ // Crea la tabla de cada usuario
+let hora_actual = 10; // Aquí se selecciona la hora actual
+let pHA = document.getElementById("h_actual").innerHTML ="La hora actual es: "+ hora_actual
         var tr = document.createElement("tr");
         var TablaI = document.getElementById("TablaI");
         TablaI.appendChild(tr);
@@ -53,10 +54,10 @@ class usuario{
         input.type ="button";
         input.value = this.nombre;
         input.id ="u_"+this.nombre;
-        input.style = "margin:10px;"   
+        input.style = "margin: 10px;border-radius: 5px;background-color: rgb(200, 215, 230);"   
         botonesC.appendChild(input);
         u_selectors[this.nombre] = document.getElementById("u_"+this.nombre)
-        u_selectors[this.nombre].addEventListener("click", function uSS(){
+        u_selectors[this.nombre].addEventListener("click", () =>{ // Funcion flecha que añade los escuchadores de evento de cada boton de usuario
             alert("Seleccionaste a: "+ usuarios[array].nombre)
             usuarios[array].cliente = true;
             ccc = array;
@@ -79,24 +80,22 @@ class usuario{
         input.type ="button";
         input.value = usuarios[e].nombre;
         input.id ="d_"+usuarios[e].nombre;
-        input.style = "margin:10px;"   
+        input.style = "margin: 10px;border-radius: 5px;background-color: rgb(200, 215, 230);"
         container.appendChild(input);
         d_selectors[usuarios[e].nombre] = document.getElementById("d_"+usuarios[e].nombre).addEventListener('click', uDD.bind(this, e));
-    }
+        var uDD = function(v){ // Accion ejecutada por el boton
+            ddd = parseInt(v);
+            usuarios[v].destino = true; 
+            u_destino = true;
+            container.innerHTML = "Ya seleccionaste el destino: "+usuarios[v].nombre
+            }
     eliminarUD(eliminarID);
-} 
+        } 
+    }   
 }
 
-var uDD = function(v){ // Accion ejecutada por el boton
-    ddd = parseInt(v);
-    usuarios[v].destino = true; 
-    u_destino = true;
-    container.innerHTML = "Ya seleccionaste el destino: "+usuarios[v].nombre
-}
 
-var hora_actual = 10; // Aquí se selecciona la hora actual
-var pHA = document.getElementById("h_actual").innerHTML ="La hora actual es: "+ hora_actual
-var botoncito = document.getElementById("boton").addEventListener("click", function transferencia() { // Ejecutar transferencia
+var botoncito = document.getElementById("boton").addEventListener("click", () => { // Funcion flecha que se llamaba transferencia, y era obvio lo que hacia..
     var hora_t = false; // Empieza en false
     var costo = 0;
     var comprobador = 0;

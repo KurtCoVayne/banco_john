@@ -1,9 +1,10 @@
 
 #main-header {
     font-family: 'Lato', sans-serif;
+    border: none;
     margin: 0;
     padding: 0%;
-    /* font-size: 16px; */
+    font-size: 16px;
     background: #1c3643;
     color: white;
     text-rendering: optimizeLegibility;
@@ -32,15 +33,17 @@ img{
     font-size: 50px; 
     font-weight: 400; 
     color: white; 
-    /* margin: auto; */
-    /* display: block; */
+    border: none; 
+    margin: auto; 
+    display: block;
 }
-h1{
-    font-size: 2.6rem;
+ h1{
+    border: 0; 
+    font-size: 3.6rem;
     text-transform: capitalize;
     margin: auto;
     display: block;
-}
+ } 
 #h2{
     font-weight: 300; 
     font-family: serif; 
@@ -78,6 +81,17 @@ hr {
     background-color: whitesmoke;
     border-collapse: collapse;
     }
+.botones{
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(200, 215, 230);
+}
+.redondeado {
+    border-radius: 5px;
+    background-color: #def;
+    margin: auto;
+    display: block;
+}
 /* body {
     background-color: #430C00
 } */
